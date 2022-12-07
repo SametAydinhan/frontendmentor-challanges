@@ -62,10 +62,9 @@ main .container .footer .card p{
 main .img-box{
     display: flex;
     width: 50%;
-    background-color: hsl(277, 64%, 61%,0.6);
     border-radius: 0 15px 15px 0;
-    background: hsl(277, 83%, 30%);
-    
+    background: hsl(277, 83%, 30%); 
+    order: 1;
 }
 
 main .img-box img{
@@ -75,17 +74,54 @@ main .img-box img{
     opacity: 0.5;
 }
 
-/* @media(max-width:1283px) {
+  @media(max-width:1276px) {
     main{
         width: 100%;
         height: 100%;
+        align-items: center;
+        justify-content: center;
     }
     main .container{
         flex-direction: column;
         height:auto;
         width: 100%;
+        justify-content: center;
+        align-items: center;
 
     }
-} */
+    main .img-box {
+        width: 80%;
+        order: 0;
+        border-radius: 15px 15px 0 0;
+    }
+    main .img-box img{
+        border-radius: 15px 15px 0 0;
+    }
+    main .container .text-box{
+        width: 80%;
+    }
+    main .container .footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-left: 30px;
+    }
+    main .container .footer .card{
+        margin-top: 30px;
+        
+    }
+    main .container .footer .card h2{
+        text-align: center;
+    }
+    main .container .footer .card p{
+        text-align: center;
+    }
+    main .container .text-box .header{
+        text-align: center;
+    }
+    main .container .text-box .text{
+        text-align: center;
+    }
+}  
 
 
