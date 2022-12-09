@@ -99,6 +99,7 @@ main .img-box img{
     }
     main .container .text-box{
         width: 80%;
+        border-radius: 0 0 15px 15px;
     }
     main .container .footer {
         flex-direction: column;
